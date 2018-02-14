@@ -8,18 +8,20 @@ import org.testng.annotations.AfterTest;
 
 public class NewTest {
 	private WebDriver driver;
+	
+	
   @Test
   public void test1() {
+	  
 	  	driver.get("https://www.google.com");
 	  	String title = driver.getTitle();
-	  	
 	  	System.out.printf("Title %s", title);
 	  	
-//	  	1LIz_0gKy-BjKrkUbM2RAo7cxtV3PiQszgHOJdxtn54I
   }
   @BeforeTest
   public void beforeTest() {
-	  String path = "C:\\Eclipse\\eclipse\\WebDriver\\chromedriver.exe";
+	  
+	  String path = Consts.CHROME_DRIVER_PATH;
 	  System.setProperty("webdriver.chrome.driver", path); //"//src/test.resources/chromedriver.exe");
 	  driver =new ChromeDriver();
 	  
@@ -27,6 +29,8 @@ public class NewTest {
 
   @AfterTest
   public void afterTest() {
+	  
+	  driver.close();
   }
 
 }

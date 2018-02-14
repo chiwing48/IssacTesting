@@ -1,7 +1,7 @@
 package TestNG;
 
 public class utilities {
-	private String chromeDriverPath = "";
+	//private String chromeDriverPath = "";
 	
 	
 }
