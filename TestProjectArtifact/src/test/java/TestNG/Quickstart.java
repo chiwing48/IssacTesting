@@ -102,7 +102,7 @@ public class Quickstart {
         // Prints the names and majors of students in a sample spreadsheet:
         // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
         
-        String spreadsheetId = "1LIz_0gKy-BjKrkUbM2RAo7cxtV3PiQszgHOJdxtn54I";
+        String spreadsheetId = Consts.SPREADSHEETID;
         String range = "Sheet1!A1:C9";
         
         
